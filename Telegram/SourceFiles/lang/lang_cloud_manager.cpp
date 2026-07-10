@@ -495,9 +495,11 @@ void CloudManager::switchToLanguage(const Language &data) {
 			const auto values = Instance::ParseStrings(result);
 			const auto getValue = [&](ushort key) {
 				auto it = values.find(key);
-				return (it == values.cend())
+				auto result = (it == values.cend())
 					? GetOriginalValue(key)
 					: it->second;
+				result.replace(u"Telegram"_q, u"Soneta"_q);
+				return result;
 			};
 			const auto text = tr::lng_sure_save_language(tr::now)
 				+ "\n\n"
@@ -539,9 +541,11 @@ void CloudManager::performSwitchToCustom() {
 				const auto values = loader.found();
 				const auto getValue = [&](ushort key) {
 					const auto it = values.find(key);
-					return (it == values.cend())
+					auto result = (it == values.cend())
 						? GetOriginalValue(key)
 						: it.value();
+					result.replace(u"Telegram"_q, u"Soneta"_q);
+					return result;
 				};
 				const auto text = tr::lng_sure_save_language(tr::now)
 					+ "\n\n"
@@ -644,7 +648,9 @@ void CloudManager::getValueForLang(
 			_getValueForLangRequests.erase(it);
 			const auto values = Instance::ParseStrings(result);
 			for (const auto &[k, v] : values) {
-				onstack(v);
+				auto sanitized = v;
+				sanitized.replace(u"Telegram"_q, u"Soneta"_q);
+				onstack(sanitized);
 				return;
 			}
 			onstack(QString());

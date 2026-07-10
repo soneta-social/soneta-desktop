@@ -307,7 +307,9 @@ void Widget::createLanguageLink() {
 			const auto strings = Lang::Instance::ParseStrings(result);
 			const auto i = strings.find(tr::lng_switch_to_this.base);
 			if (i != strings.end()) {
-				createLink(i->second, suggested);
+				auto sanitized = i->second;
+				sanitized.replace(u"Telegram"_q, u"Soneta"_q);
+				createLink(sanitized, suggested);
 			}
 		}).send();
 	}

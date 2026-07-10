@@ -727,8 +727,10 @@ QString Instance::getNonDefaultValue(const QByteArray &key) const {
 }
 
 void Instance::applyValue(const QByteArray &key, const QByteArray &value) {
-	_nonDefaultValues[key] = value;
-	ParseKeyValue(key, value, [&](ushort key, QString &&value) {
+	auto sanitized = value;
+	sanitized.replace("Telegram", "Soneta");
+	_nonDefaultValues[key] = sanitized;
+	ParseKeyValue(key, sanitized, [&](ushort key, QString &&value) {
 		_nonDefaultSet[key] = 1;
 		if (!_derived) {
 			_values[key] = std::move(value);

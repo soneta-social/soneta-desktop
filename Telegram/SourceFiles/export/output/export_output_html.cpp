@@ -1387,10 +1387,10 @@ auto HtmlWriter::Wrap::pushMessage(
 			? "No winners of the giveaway could be selected."
 			: (data.credits && data.unclaimed)
 			? "Some winners of the giveaway were randomly selected by "
-				"Telegram and received their prize."
+				"Soneta and received their prize."
 			: (!data.credits && data.unclaimed)
 			? "Some winners of the giveaway were randomly selected by "
-				"Telegram and received private messages with giftcodes."
+				"Soneta and received private messages with giftcodes."
 			: (data.credits && !data.unclaimed)
 			? NumberToString(data.winners) + " of the giveaway was randomly "
 				"selected by Telegram and received their prize."
@@ -2324,8 +2324,8 @@ QByteArray HtmlWriter::Wrap::pushGiveaway(
 			+ Data::NumberToString(data.quantity)
 			+ "</b> "
 			+ SerializeString((data.quantity > 1)
-				? "Telegram Premium Subscriptions"
-				: "Telegram Premium Subscription")
+				? "Soneta Premium Subscriptions"
+				: "Soneta Premium Subscription")
 			+ " for <b>" + Data::NumberToString(data.months) + "</b> "
 			+ (data.months > 1 ? "months." : "month."));
 	}
