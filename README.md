@@ -1,14 +1,14 @@
-# [Telegram Desktop][telegram_desktop] – Official Messenger
+# [Soneta Desktop][soneta_desktop] – Alternative desktop application client for the messaging service powered by the Telegram API 
 
-This is the complete source code and the build instructions for the official [Telegram][telegram] messenger desktop client, based on the [Telegram API][telegram_api] and the [MTProto][telegram_proto] secure protocol.
+This is the complete source code and the build instructions for the official [Soneta][soneta] messenger desktop client, based on the [Telegram API][telegram_api] and the [MTProto][telegram_proto] secure protocol.
 
-[![Version](https://badge.fury.io/gh/telegramdesktop%2Ftdesktop.svg)](https://github.com/telegramdesktop/tdesktop/releases)
-[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/Windows./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
-[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/MacOS./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
-[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/Linux./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
+[![Version](https://badge.fury.io/gh/sonetadesktop%2Fsdesktop.svg)](https://github.com/sonetadesktop/sdesktop/releases)
+[![Build Status](https://github.com/sonetadesktop/sdesktop/workflows/Windows./badge.svg)](https://github.com/sonetadesktop/sdesktop/actions)
+[![Build Status](https://github.com/sonetadesktop/sdesktop/workflows/MacOS./badge.svg)](https://github.com/sonetadesktop/tdesktop/actions)
+[![Build Status](https://github.com/sonetadesktop/tdesktop/workflows/Linux./badge.svg)](https://github.com/sonetadesktop/tdesktop/actions)
 [![Built with Depot](https://img.shields.io/badge/Built%20with-Depot.dev-46A75A)](https://depot.dev)
 
-[![Preview of Telegram Desktop][preview_image]][preview_image_url]
+[![Preview of Soneta Desktop][preview_image]][preview_image_url]
 
 The source code is published under GPLv3 with OpenSSL exception, the license is available [here][license].
 
@@ -16,30 +16,12 @@ The source code is published under GPLv3 with OpenSSL exception, the license is 
 
 The latest version is available for
 
-* [Windows 7 and above (64 bit)](https://telegram.org/dl/desktop/win64) ([portable](https://telegram.org/dl/desktop/win64_portable))
-* [Windows 7 and above (32 bit)](https://telegram.org/dl/desktop/win) ([portable](https://telegram.org/dl/desktop/win_portable))
-* [macOS 10.13 and above](https://telegram.org/dl/desktop/mac)
-* [Linux static build for 64 bit](https://telegram.org/dl/desktop/linux)
-* [Snap](https://snapcraft.io/telegram-desktop)
-* [Flatpak](https://flathub.org/apps/details/org.telegram.desktop)
-
-## Old system versions
-
-Version **4.9.9** was the last that supports older systems
-
-* [macOS 10.12](https://updates.tdesktop.com/tmac/tsetup.4.9.9.dmg)
-* [Linux with glibc < 2.28 static build](https://updates.tdesktop.com/tlinux/tsetup.4.9.9.tar.xz)
-
-Version **2.4.4** was the last that supports older systems
-
-* [OS X 10.10 and 10.11](https://updates.tdesktop.com/tosx/tsetup-osx.2.4.4.dmg)
-* [Linux static build for 32 bit](https://updates.tdesktop.com/tlinux32/tsetup32.2.4.4.tar.xz)
-
-Version **1.8.15** was the last that supports older systems
-
-* [Windows XP and Vista](https://updates.tdesktop.com/tsetup/tsetup.1.8.15.exe) ([portable](https://updates.tdesktop.com/tsetup/tportable.1.8.15.zip))
-* [OS X 10.8 and 10.9](https://updates.tdesktop.com/tmac/tsetup.1.8.15.dmg)
-* [OS X 10.6 and 10.7](https://updates.tdesktop.com/tmac32/tsetup32.1.8.15.dmg)
+* [Windows 7 and above (64 bit)](https://soneta.social/dl/desktop/win64) ([portable](https://soneta.social/dl/desktop/win64_portable))
+* [Windows 7 and above (32 bit)](https://soneta.social/dl/desktop/win) ([portable](https://soneta.social/dl/desktop/win_portable))
+* [macOS 10.13 and above](https://soneta.social/dl/desktop/mac)
+* [Linux static build for 64 bit](https://soneta.social/dl/desktop/linux)
+* [Snap](https://snapcraft.io/soneta-desktop)
+* [Flatpak](https://flathub.org/apps/details/social.soneta.desktop)
 
 ## Third-party
 
@@ -74,26 +56,15 @@ Version **1.8.15** was the last that supports older systems
 * [GNU/Linux using Docker][linux]
 
 [//]: # (LINKS)
-[telegram]: https://telegram.org
-[telegram_desktop]: https://desktop.telegram.org
+[soneta]: https://soneta.social
+[soneta_desktop]: https://soneta.social/desktop
 [telegram_api]: https://core.telegram.org
 [telegram_proto]: https://core.telegram.org/mtproto
 [license]: LICENSE
 [win]: docs/building-win.md
 [mac]: docs/building-mac.md
 [linux]: docs/building-linux.md
-[preview_image]: https://github.com/telegramdesktop/tdesktop/blob/dev/docs/assets/preview.png "Preview of Telegram Desktop"
-[preview_image_url]: https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/docs/assets/preview.png
+[preview_image]: https://github.com/soneta-social/soneta-desktop/blob/dev/docs/assets/preview.png "Preview of Soneta Desktop"
+[preview_image_url]: https://raw.githubusercontent.com/soneta-social/soneta-desktop/dev/docs/assets/preview.png
 
-## Thanks to
-
-<a href="https://depot.dev">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://depot.dev/assets/brand/1693758816/depot-logo-horizontal-on-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://depot.dev/assets/brand/1693758816/depot-logo-horizontal-on-light.svg">
-    <img alt="Depot" src="https://depot.dev/assets/brand/1693758816/depot-logo-horizontal-on-light.svg" width="150">
-  </picture>
-</a>
-
-CI infrastructure sponsored by [Depot](https://depot.dev) — fast GitHub Actions runners.
 
