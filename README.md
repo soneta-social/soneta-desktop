@@ -1,12 +1,12 @@
-# [Soneta Desktop][soneta_desktop] – Alternative desktop application client for the messaging service powered by the Telegram API 
+# [Soneta Desktop][soneta_desktop] – official desktop application client for Soneta, an open-source social layer built on the [Telegram API][telegram_api] 
 
-This is the complete source code and the build instructions for the official [Soneta][soneta] messenger desktop client, based on the [Telegram API][telegram_api] and the [MTProto][telegram_proto] secure protocol.
+This is the complete source code and the build instructions for the official [Soneta][soneta] desktop client, based on the [Telegram API][telegram_api] and the [MTProto][telegram_proto] secure protocol.
 
-[![Version](https://badge.fury.io/gh/sonetadesktop%2Fsdesktop.svg)](https://github.com/sonetadesktop/sdesktop/releases)
-[![Build Status](https://github.com/sonetadesktop/sdesktop/workflows/Windows./badge.svg)](https://github.com/sonetadesktop/sdesktop/actions)
-[![Build Status](https://github.com/sonetadesktop/sdesktop/workflows/MacOS./badge.svg)](https://github.com/sonetadesktop/tdesktop/actions)
-[![Build Status](https://github.com/sonetadesktop/tdesktop/workflows/Linux./badge.svg)](https://github.com/sonetadesktop/tdesktop/actions)
-[![Built with Depot](https://img.shields.io/badge/Built%20with-Depot.dev-46A75A)](https://depot.dev)
+
+[![Version](https://badge.fury.io/gh/telegramdesktop%2Ftdesktop.svg)](https://github.com/telegramdesktop/tdesktop/releases)
+[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/Windows./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
+[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/MacOS./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
+[![Build Status](https://github.com/telegramdesktop/tdesktop/workflows/Linux./badge.svg)](https://github.com/telegramdesktop/tdesktop/actions)
 
 [![Preview of Soneta Desktop][preview_image]][preview_image_url]
 
@@ -64,7 +64,7 @@ The latest version is available for
 [win]: docs/building-win.md
 [mac]: docs/building-mac.md
 [linux]: docs/building-linux.md
-[preview_image]: https://github.com/soneta-social/soneta-desktop/blob/dev/docs/assets/preview.png "Preview of Soneta Desktop"
-[preview_image_url]: https://raw.githubusercontent.com/soneta-social/soneta-desktop/dev/docs/assets/preview.png
+[preview_image]: https://github.com/soneta-social/soneta-desktop/blob/main/docs/assets/preview.png "Preview of Soneta Desktop"
+[preview_image_url]: https://raw.githubusercontent.com/soneta-social/soneta-desktop/main/docs/assets/preview.png
 
 
